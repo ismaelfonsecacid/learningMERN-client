@@ -1,33 +1,38 @@
 @import '../../../../scss/index.scss';
 
-
-
 .list-posts-web {
     margin-top: 70px;
+}
 
-    .list {
-        display: flex;
-        flex-wrap: wrap;
+.list-posts-web .list {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-        .item {
-            width: 33.33%;
-            padding: 20px;
-        }
-    }
+.list-posts-web .list .item {
+    width: 33.33%;
+    padding: 20px;
+}
 
-    .pagination {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
+.list-posts-web .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
 
-        a {
-            color: $text-light !important;
-            opacity: 0.6;
+.list-posts-web .pagination a {
+    color: $text-light !important;
+    opacity: 0.6;
+}
 
-            &.active {
-                opacity: 1;
-                border-color: $text-light !important;
-            }
-        }
+.list-posts-web .pagination a.active {
+    opacity: 1;
+    border-color: $text-light !important;
+}
+
+@media (max-width: 500px) {
+    .list-posts-web .list .item {
+        width: 50%;
+
     }
 }

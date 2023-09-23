@@ -9,7 +9,7 @@ export default function Info() {
 	return (
 		<div className="footer-info">
 			<Icon.LogoWhite className="logo" />
-			<p>QUE PASA GENTE</p>
+			<p>WEB creada a partir de un curso de UDEMY</p>
 
 			{map(socialData, (social) => (
 				<Button

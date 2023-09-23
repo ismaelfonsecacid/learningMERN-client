@@ -1,55 +1,58 @@
 @import '../../../scss/index.scss';
 
+.how>h2 {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: $text-light;
+    margin: 0;
+}
 
-.how {
-    >h2 {
-        text-align: center;
-        font-size: 30px;
-        text-transform: uppercase;
-        color: $text-light;
-        margin: 0;
+.how>h4 {
+    color: $text-light;
+    font-weight: 100;
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.6;
+}
 
-    }
+.how__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
 
-    >h4 {
-        color: $text-light;
-        font-weight: 100;
-        margin: 0;
-        text-align: center;
-        font-size: 14px;
-        opacity: 0.6;
-    }
+.how__items>div {
+    width: 33.33%;
+    color: $text-light;
+    text-align: center;
+}
 
-    &__items {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 50px;
+.how__items>div>div {
+    margin: 15px;
+    padding: 30px;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+}
 
-        >div {
-            width: 33.33%;
-            color: $text-light;
-            text-align: center;
+.how__items>div>div i {
+    margin: 0;
+    font-size: 16px;
+}
 
-            >div {
-                margin: 15px;
-                padding: 30px;
-                box-shadow: 0 0 10px 3px rgb(0 0 0 / 75%);
-                border-radius: 10px;
+.how__items>div>div h3 {
+    margin: 10px 0 6px 0;
+}
 
-                i {
-                    margin: 0;
-                    font-size: 16px;
-                }
+.how__items>div>div p {
+    opacity: 0.4;
+    font-size: 12px;
+}
 
-                h3 {
-                    margin: 10px 0 6px 0;
-                }
+@media (max-width: 768px) {
+    .how__items>div {
+        width: 50%;
 
-                p {
-                    opacity: 0.4;
-                    font-size: 12px;
-                }
-            }
-        }
     }
 }

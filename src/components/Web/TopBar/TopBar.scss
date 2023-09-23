@@ -1,41 +1,40 @@
 @import '../../../scss/index.scss';
 
 .top-bar {
-
     height: 60px;
     background-color: $background-dark-web;
+}
 
-    >.ui.container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 100%;
-    }
+.top-bar>.ui.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
 
-    &__left {
-        height: 100%;
-        display: flex;
-        align-items: center;
+.top-bar__left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 
-        .logo {
-            height: 60%;
+.top-bar__left .logo {
+    height: 60%;
+}
 
-            >svg {
-                height: 100%;
-            }
-        }
+.top-bar__left .logo>svg {
+    height: 100%;
+}
 
-        .menu {
-            margin-left: 20px;
+.top-bar__left .menu {
+    margin-left: 20px;
+}
 
-            a {
-                margin: 0 5px;
-                color: $text-light;
+.top-bar__left .menu a {
+    margin: 0 5px;
+    color: $text-light;
+}
 
-                &:hover {
-                    opacity: 0.6;
-                }
-            }
-        }
-    }
+.top-bar__left .menu a:hover {
+    opacity: 0.6;
 }

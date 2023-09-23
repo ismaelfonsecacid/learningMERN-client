@@ -1,68 +1,90 @@
 @import '../../../scss/index.scss';
 
+/* Estilos generales para pantallas grandes */
+.home-courses>h2 {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: $text-light;
+    margin: 50px 0 30px 0;
+}
 
-.home-courses {
-    >h2 {
-        text-align: center;
-        font-size: 30px;
-        text-transform: uppercase;
-        color: $text-light;
-        margin: 50px 0 30px 0;
+.home-courses__all-courses {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.home-courses__all-courses>a {
+    width: 50%;
+    display: flex;
+    padding: 10px;
+}
+
+.home-courses__all-courses>a:hover {
+    opacity: 0.6;
+}
+
+.home-courses__all-courses .ui.image {
+    height: 100px;
+}
+
+.home-courses__all-courses>a>div {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.home-courses__all-courses>a>div>span {
+    color: $text-light;
+}
+
+.home-courses__all-courses>a>div>span:first-of-type {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.home-courses__all-courses>a>div>span:last-of-type {
+    opacity: 0.4;
+    font-size: 12px;
+    padding-top: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.home-courses__more {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.home-courses__more .ui.button {
+    width: 200px;
+}
+
+/* Media Query para tablet (768px de ancho o menos) */
+@media (max-width: 768px) {
+    .home-courses__all-courses>a {
+        width: 50%;
+        flex-direction: column;
+        /* Cambiar el ancho a 100% para que se ajuste a la pantalla completa */
     }
 
-    &__all-courses {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 -10px;
+    .home-courses__all-courses .ui.image {
+        height: 100px;
+        width: 200px;
+    }
+}
 
-        >a {
-            width: 50%;
-            display: flex;
-            padding: 10px;
-
-            &:hover {
-                opacity: 0.6;
-            }
-
-            .ui.image {
-                height: 100px;
-            }
-
-            >div {
-                display: flex;
-                flex-direction: column;
-                padding: 0 10px;
-
-                >span {
-                    color: $text-light;
-
-                    &:first-of-type {
-                        font-weight: bold;
-                        font-size: 16px;
-                    }
-
-                    &:last-of-type {
-                        opacity: 0.4;
-                        font-size: 12px;
-                        padding-top: 6px;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        display: -webkit-box;
-                        -webkit-box-orient: vertical;
-                        -webkit-line-clamp: 2;
-                    }
-                }
-            }
-        }
+/* Media Query para dispositivos móviles (480px de ancho o menos) */
+@media (max-width: 480px) {
+    .home-courses>h2 {
+        font-size: 24px;
+        /* Reducir el tamaño del encabezado */
     }
 
-    &__more {
-        display: flex;
-        justify-content: center;
-        padding: 20px 0;
-
-        >.ui.button {
-            width: 200px;
-        }
-    }
+    /* Puedes agregar más estilos específicos para móvil aquí */
 }
