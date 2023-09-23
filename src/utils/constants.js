@@ -1,4 +1,4 @@
-const SERVER_IP = "learningmern.up.railway.app";
+const SERVER_IP = "learningmern.onrender.com";
 
 export const ENV = {
 	BASE_PATH: `https://${SERVER_IP}`,
