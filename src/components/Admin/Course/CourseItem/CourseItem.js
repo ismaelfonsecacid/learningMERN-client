@@ -38,7 +38,7 @@ export default function CourseItem(props) {
 		<>
 			<div className="course-item">
 				<div className="course-item__info">
-					<Image src={`${ENV.BASE_PATH}/${course.miniature}`} />
+					<Image src={`${ENV.BASE_IMG}/${course.miniature}`} />
 					<div>
 						<p>{course.title}</p>
 					</div>
