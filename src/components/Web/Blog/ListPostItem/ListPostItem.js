@@ -16,7 +16,7 @@ export default function ListPostItem(props) {
 
 	return (
 		<Link className="list-post-item" to={`/blog/${post.path}`}>
-			<Image src={`${ENV.BASE_PATH}/${post.miniature}`} fluid />
+			<Image src={`${ENV.BASE_IMG}/${post.miniature}`} fluid />
 			<h2>{post.title}</h2>
 			<span>{formattedDate}</span>
 		</Link>
