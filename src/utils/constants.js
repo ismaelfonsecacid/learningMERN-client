@@ -11,7 +11,7 @@ export const ENV = {
 		REFRESH_ACCESS_TOKEN: "auth/refresh_access_token",
 		USERS: "users",
 		MENU: "menu",
-		COURSE: "course",
+		COURSE: "courses",
 		NEWSLETTER: "newsletter",
 		POST: "post",
 	},
