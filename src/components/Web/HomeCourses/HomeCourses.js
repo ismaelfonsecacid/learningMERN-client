@@ -27,7 +27,7 @@ export default function HomeCourses() {
 			<div className="home-courses__all-courses">
 				{map(courses, (course) => (
 					<a key={course._id} href={course.url} target="_blank">
-						<Image src={`${ENV.BASE_PATH}/${course.miniature}`} />
+						<Image src={`${ENV.BASE_IMG}/${course.miniature}`} />
 						<div>
 							<span>{course.title}</span>
 							<span>{course.description}</span>

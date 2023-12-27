@@ -7,7 +7,7 @@ export default function Course(props) {
 	const { course } = props;
 	return (
 		<div className="course">
-			<Image src={`${ENV.BASE_PATH}/${course.miniature}`} />
+			<Image src={`${ENV.BASE_IMG}/${course.miniature}`} />
 			<div className="course__info">
 				<h3>{course.title}</h3>
 				<p>{course.description}</p>

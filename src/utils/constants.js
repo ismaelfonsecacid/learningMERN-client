@@ -2,6 +2,7 @@ const SERVER_IP = "apirestisma-2c6598226d63.herokuapp.com";
 
 export const ENV = {
 	BASE_PATH: `https://${SERVER_IP}`,
+	BASE_IMG: `https://storage.googleapis.com/apirest-isma/`,
 	BASE_API: `https://${SERVER_IP}/api/v1`,
 	API_ROUTES: {
 		REGISTER: "auth/register",
