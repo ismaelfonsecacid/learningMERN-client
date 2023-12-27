@@ -1,4 +1,4 @@
-const SERVER_IP = "learningmern.onrender.com";
+const SERVER_IP = "apirestisma-2c6598226d63.herokuapp.com";
 
 export const ENV = {
 	BASE_PATH: `https://${SERVER_IP}`,
